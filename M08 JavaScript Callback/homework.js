@@ -4,8 +4,7 @@ function mayuscula(nombre) {
    // Esta función recibe un nombre (string).
    // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
    // [Ejemplo]: "mario" ----> "Mario".
-   // Tu código:
-   
+   // Tu código:   
    var nuevoNombre = function() {
       var name = nombre.charAt(0).toUpperCase() + nombre.slice(1)      
       return name 
@@ -25,7 +24,6 @@ function operacionMatematica(num1, num2, cb) {
    // El callback realiza una operación matemática, por lo que necesita de los dos números.
    // Retorna el resultado del callback pasándole como parámetros los números.
    // Tu código:
-
    return cb(num1,num2)
 }
 
@@ -39,9 +37,7 @@ function sumarArray(arrayOfNumbers, cb) {
    for(let i = 0; i<arrayOfNumbers.length; i++){
       suma += arrayOfNumbers[i]
    }
-
    cb(suma)
-
 }
 
 function forEach(array, cb) {
@@ -53,7 +49,6 @@ function forEach(array, cb) {
    array.forEach((elem) => {
       cb(elem)
    });
-
 }
 
 function map(array, cb) {
@@ -78,9 +73,7 @@ function filter(arrayOfStrings) {
          arr.push(arrayOfStrings[i])
       }
    }
-
    return arr
-
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
