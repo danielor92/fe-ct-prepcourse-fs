@@ -439,7 +439,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       console.log(this.objetoProducto.precio); 
    }
 
-   objetoProducto.calcularPrecioDescuento(this.objetoProducto.precio, this.objetoProducto.porcentajeDeDescuento)
+   //objetoProducto.calcularPrecioDescuento(this.objetoProducto.precio, this.objetoProducto.porcentajeDeDescuento)
 }
    const storeItem = {
       precio: 80,
@@ -468,5 +468,45 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       }
          return objetoProducto
    }
-   agregarMetodoCalculoDescuento1(storeItem2)
+   //agregarMetodoCalculoDescuento1(storeItem2)
 
+   function agregarStringInvertida() {
+      // Agrega un método al prototipo de "String" que devuelva la misma cadena de caracteres, pero invertida.
+      // El método debe llamarse "reverse".
+      // [PISTA]: necesitarás utilizar el objeto "this".
+   
+      String.prototype.reverse = function (){
+         let dat = this.split('').reverse().join('')
+         console.log(this);
+         console.log(dat);
+      }   
+   }
+
+   //mayuscula('daniel')
+
+   function mayuscula(nombre) {
+      // Esta función recibe un nombre (string).
+      // Debe devolver el mismo nombre, pero con la primera letra en mayúscula.
+      // [Ejemplo]: "mario" ----> "Mario".
+      // Tu código:
+      
+      var nuevoNombre = function() {
+         var names = nombre.charAt(0).toUpperCase() + nombre.slice(1)      
+         return names
+      }
+       return nuevoNombre
+   }
+
+   mayuscula('Daniel')
+
+
+   function operacionMatematica(num1, num2, cb) {
+      // En este ejercicio recibirás dos números y un callback.
+      // El callback realiza una operación matemática, por lo que necesita de los dos números.
+      // Retorna el resultado del callback pasándole como parámetros los números.
+      // Tu código:
+
+      return cb(num1,num2)
+   }
+   
+   
