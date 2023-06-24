@@ -57,8 +57,11 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+
    let cont = false;
+
    //array.forEach(num => console.log(num))
+
    for(let i = 0; i<array.length; i++){
       if(array[i] == elemento){
          cont = true
@@ -82,7 +85,6 @@ function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
-
    let prom = 0
    for(let i = 0; i<resultadosTest.length; i++){
       prom += resultadosTest[i]
@@ -117,13 +119,13 @@ function multiplicarArgumentos() {
                            num *= arreglo[i]
                        }
                        return num
-               }else if(arguments[0].length==1){
+               }else if(arguments[0].length == 1){
                    return arguments[0]
            }
        }else{
            return 0
        }
-   }else if(arguments.length == 1){
+   }else if(arguments.length === 1){
        return arguments[0]
    }else
        return 0
@@ -162,7 +164,6 @@ function diaDeLaSemana(numeroDeDia) {
    }
 
 }
-
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
@@ -172,9 +173,21 @@ function empiezaConNueve(num) {
    //console.log(arrSep)
    if(arrSep[0]==9){
       return true
-   }else
+   }else{
       return false
+   }
 }
+// Es el anterior ejercicio solucionado con ciclos
+// !function empiezaConNueve(num) {
+// Esta función recibe por parámetro un número.
+// Debe retornar true si el entero inicia con 9 y false en otro caso.
+// Tu código:
+//    var vars = num.toString().split('');
+//         for (var i = 0; i < vars.length; i++) {
+//           if(vars[i]==9){return true}
+//            return false
+//        }
+//    }
 
 function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.

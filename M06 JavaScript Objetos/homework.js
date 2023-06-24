@@ -9,9 +9,9 @@ function crearGato(nombre, edad) {
    // Tu código:
 
    let gato = {nombre: nombre, edad: edad, meow: function (){
-            return 'Meow!'
-  },}
-
+                  return 'Meow!'
+                  }
+              }
   return gato
 }
 
@@ -83,7 +83,7 @@ function verificarPassword(objetoUsuario, password) {
    // En ese caso retornar true. Caso contrario, false.
    // Tu código:
 
-   if(objetoUsuario['password'] == password){
+   if(objetoUsuario['password'] === password){
       return true
    }else
       return false

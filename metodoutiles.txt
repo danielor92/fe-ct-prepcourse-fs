@@ -1,0 +1,18 @@
+Math.pow() permite potenciar un numero por ejemplo 2 elevado al cubo ( Math.pow(2,3)) el primer argumento es el numero a elevar y el segundo argumento es la potencia a la cual se elevara
+
+Math.round redondeará el número decimal al entero más próximo. Es decir que, si tenemos 0.49, el resultado será 0. En cambio, si tenemos 0.50, el resultado será 1.
+
+Math.floor redondeará el número decimal al entero de menor valor. Por ejemplo, si tenemos el número 5.93, el resultado será 5.
+
+Math.ceil este método, al contrario que el anterior, redondeará un número al siguiente entero. Por ejemplo, si tenemos 3.27 el resultado será 4.
+
+
+//////////////////
+
+Math.min y Math.max permiten conocer el valor minimo y maximo de un conjunto de numeros ya sea arrglo o una cadena de numeros.
+
+Math.random nos permite generar un numero aleatorio entre 0 y 1, existe una formula muy conocida para transcribir estos numeros en escalas de 1 a 100 en caso de ser requerido.
+
+/////////////////////////////////////
+
+

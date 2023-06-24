@@ -497,7 +497,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
        return nuevoNombre
    }
 
-   mayuscula('Daniel')
+   //mayuscula('Daniel')
 
 
    function operacionMatematica(num1, num2, cb) {
@@ -509,4 +509,11 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
       return cb(num1,num2)
    }
    
-   
+   var libro = { autor: 'Borges', genero: 'Policial', anhio: 1990}
+   //! create a variable with the method Object.keys(Object)
+   var todasLasPropiedades = Object.keys(libro)
+   //! console.log of this var will return us all the properties of the object Libro
+
+   console.log(libro.autor)
+
+   console.log(todasLasPropiedades);

@@ -32,7 +32,7 @@ function conection(status) {
    // Retornar el estado de conexión del usuario.
    // Tu código:
 
-   let response
+   let response = '';
 
    switch (status) {
       case 1:
@@ -84,7 +84,9 @@ function colors(color) {
    // Si no es ninguno de esos colores           --> "Color not found".
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
-   let colors
+   
+   let colors = '';
+
    switch (color) {
       case "blue":
          colors = 'This is blue'

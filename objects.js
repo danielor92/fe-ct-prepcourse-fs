@@ -2,15 +2,15 @@
 var deportes = {
     conBalon: ['Football','Basketball', 'Rugby'],
     sinBalon:['Boxeo', 'Surf', 'Trekking'],
-}
+};
 
 
 console.log(deportes.conBalon[1])
 
-var persona =  {nombre: 'Lucas', edad: 26, estudios: {esProgramador: true}}
+var persona =  { nombre: 'Lucas', edad: 26, estudios: { esProgramador: true } } 
 
 //Acceder a una propiedad con Dot-Notation
-console.log(persona.edad)
+//console.log(persona.edad)
 
 persona.nombre = 'Daniel'
 console.log(persona)

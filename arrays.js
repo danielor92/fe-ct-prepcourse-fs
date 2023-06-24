@@ -34,7 +34,7 @@ console.log(elementoDelArray)
 //colores.shift()
 
 /*
-    //El metodo 'includes' busca el elemento que se le dice entre los parentesis y devuelve un boleano ya sea falso o verdadero.
+    El metodo 'includes' busca el elemento que se le dice entre los parentesis y devuelve un boleano ya sea falso o verdadero.
 
     var pintores = ['Picasso', 'Velazquez', 'Van Gogh', 'Dali']
     var incluyeElemento = pintores.includes('Monet')
@@ -42,7 +42,7 @@ console.log(elementoDelArray)
 */
 
 /*
-    //Este metodo 'every' valida todos los elementos del array por medio de una funcion de flecha la cual se encarga de trabajar con un parametro inicial llamado num el cual sera quien aplique la condicion en este caso pregunta si todos los elementos dentro del array son mayores a 5.
+    Este metodo 'every' valida todos los elementos del array por medio de una funcion de flecha la cual se encarga de trabajar con un parametro inicial llamado num el cual sera quien aplique la condicion en este caso pregunta si todos los elementos dentro del array son mayores a 5.
 
     var numeros = [10,6,8,9]
     var cumple = numeros.every(num => {
@@ -53,20 +53,19 @@ console.log(elementoDelArray)
 */
 
 /*
-    // el metodo 'Split' nos permite separar un string y volverlo un arreglo donde cada letra es un elemento que hace parte del array, con esto podemos modificar palabras mal ingresadas o funcionalidades de quitar ciertos caracteres de nuestros strings.
+    el metodo 'Split' nos permite separar un string y volverlo un arreglo donde cada letra es un elemento que hace parte del array, con esto podemos modificar palabras mal ingresadas o funcionalidades de quitar ciertos caracteres de nuestros strings.
 
     var palabra = 'Daniey'
     var palabraSeparada = palabra.split('')
     palabraSeparada.pop()
     palabraSeparada.push('l')
-    //console.log(palabraSeparada)
+    console.log(palabraSeparada)
 
 */
 
 
 /*
-
-    // el metodo 'join' nos permite volver a juntar nuestro array y volverlo un string.
+    el metodo 'join' nos permite volver a juntar nuestro array y volverlo un string.
 
      var palabraArreglada = palabraSeparada.join('')
     console.log(palabraArreglada)
@@ -74,11 +73,11 @@ console.log(elementoDelArray)
 */
     var numeros = [1,2,3,4]
 /*
-    // el metodo 'forEach' es capaz de recorrer todo el arreglo en busca de ciertos elementos o todos dandonos opciones para poder buscar, validar, quitar incluso poner si se cumplen ciertas condiciones este metodo la mayoria de las veces es acompaniado de una funcion de flechas la cual se le indica el parametro que se va a buscar y la condicion como se muestra acontinuacion
+    el metodo 'forEach' es capaz de recorrer todo el arreglo en busca de ciertos elementos o todos dandonos opciones para poder buscar, validar, quitar incluso poner si se cumplen ciertas condiciones este metodo la mayoria de las veces es acompaniado de una funcion de flechas la cual se le indica el parametro que se va a buscar y la condicion como se muestra acontinuacion
 
     
     numeros.forEach(num => console.log(num))
-    numeros.forEach(num => {
+    numeros.forEach((num) => {
         if(num === 2) {
             console.log(num)
         }
@@ -87,7 +86,9 @@ console.log(elementoDelArray)
 
 /*
 
-    // el metodo 'map' realiza una copia del arreglo original y realiza cambios sobre el arreglo si quisieramos restarle 1 a todos los elementos de un arreglo bastaria con llamar la funcion map y por medio de una funcion de flechas restarlo en lo que se retorna, tambien podriamos agregar condiciones si se cumplen para hacerlo, como se muestra acontinuacion
+    el metodo 'map' realiza una copia del arreglo original y realiza cambios sobre el arreglo si quisieramos restarle 1 a todos los elementos de un arreglo bastaria con llamar la funcion map y por medio de una funcion de flechas restarlo en lo que se retorna, tambien podriamos agregar condiciones si se cumplen para hacerlo, como se muestra acontinuacion
+
+    var numeros = [1,2,3,4]
 
     var masUno = numeros.map((num) => {
         if(num > 0 ){
@@ -95,6 +96,8 @@ console.log(elementoDelArray)
         }
     })
     console.log(masUno)
+
+    Expected: [ 0, 1, 2, 3 ]
 
 */
 
